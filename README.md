@@ -1,2 +1,2 @@
 # ToDoApp
-Full stack To Do App using the MERN Stack
+Full stack To Do App created using the MERN Stack
