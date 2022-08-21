@@ -66,7 +66,34 @@ h4{
 .todo.is-complete .checkbox {
     background-color: var(--primary);
     background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+    
 }
+
+.todo .text {
+    font-size: 20px;
+}
+
+.todo.is-complete .text {
+    text-decoration: line-through;
+}
+
+.todo .delete-todo {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+    color: var(--light);
+    background-color: #d81e5b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 

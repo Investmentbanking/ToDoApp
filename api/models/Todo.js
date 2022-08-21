@@ -22,7 +22,7 @@ const TodoSchema = new Schema({
         // store the current time 
         default: Date.now()
     }
-})
+});
 
 // this is where you create the model
 const Todo = mongoose.model("Todo", TodoSchema);
