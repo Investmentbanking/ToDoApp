@@ -26,18 +26,38 @@ const Todo = require('./models/Todo');
 app.get('/todos', async (req, res) => {
     const todos = await Todo.find();
 
-    // stores out to dos here
+    // stores to dos here
     res.json(todos);
 })
 
+// creates new to dos
 app.post('/todo/new', (req, res) =>{
     const todo = new Todo({
         text: req.body.text
     });
 
+    // saves the to do to our collection
+    todo.save();
+
+    // passes back our new to do so we can add to our list
+    res.json(todo);
+});
+
+// deletes a post
+app.delete('/todo/delete/:id', async (req, res) =>{
+    const result = await Todo.findByIdAndDelete(req.params.id);
+
+    res.json(result);
+})
+
+app.put('/todo/complete/:id', async (req, res) =>{
+    const todo = await Todo.findById(req.params.id);
+
+    todo.complete = !todo.complete;
+
     todo.save();
 
     res.json(todo);
-});
+})
 
 app.listen(3001, () => console.log("Server started on port 3001"));
