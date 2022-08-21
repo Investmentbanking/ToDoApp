@@ -2,7 +2,26 @@ function App() {
 	return (
 		<div className="App">
             <h1> Welcome to the To List App </h1>
-		</div>
+            <h4> Your Tasks </h4>
+
+            <div className = "todos">
+                <div className = "todo">
+                    <div className = "checkbox"></div>
+
+                    <div className = "text">Get the bread</div>
+
+                    <div className = "delete-todo">x</div>   
+                </div>      
+
+                <div className = "todo is-complete">
+                    <div className = "checkbox"></div>
+
+                    <div className = "text">Get the milk</div>
+                    
+                    <div className = "delete-todo">x</div>    
+                </div>
+		    </div>
+        </div>
 	);
 }
 
