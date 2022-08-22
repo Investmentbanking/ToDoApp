@@ -16,7 +16,10 @@
 }
 
 body {
-    background-color: var(--dark-alt);
+    background-image: url('https://www.riotinto.com/-/media/Content/Images/About/Innovation/AI/artificial-intelligence.jpg?rev=3bfa49f4f00d4b75b442381590ba6f95?w=720&hash=55E441B570A53BC16A031A8CFC80682D');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--light);
 }
 
@@ -86,7 +89,7 @@ h4{
     width: 24px;
     height: 24px;
     color: var(--light);
-    background-color: #d81e5b;
+    background-color: #a60eba;
     border-radius: 50%;
 
     display: flex;

@@ -45,7 +45,7 @@ app.post('/todo/new', (req, res) =>{
 
 // deletes a post
 app.delete('/todo/delete/:id', async (req, res) =>{
-    const result = await Todo.findByIdAndDelete(req.params.id);
+    const result = await Todo.findByIdAndDelete(req.params.id.toString().trim());
 
     res.json(result);
 })
