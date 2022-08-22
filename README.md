@@ -1,7 +1,7 @@
 # ToDoApp
-Full stack To Do App created using the MERN Stack
+Full stack To Do App created using the MERN Stack (MongoDB, Express, React and Node)
 
-Includes delete
+Includes GET, DELETE, POST and PUT functionality 
 
 # Screenshots
 
