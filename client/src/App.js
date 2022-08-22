@@ -70,8 +70,8 @@ function App() {
 
 	return (
 		<div className="App">
-            <h1> Welcome to the To List App </h1>
-            <h4> Your Tasks </h4>
+            <h1> Welcome to your personal To-Do-List!</h1>
+            <h4> <strong>Your Tasks: </strong></h4>
 
             <div className = "todos">
                 {todos.map(todo => (
@@ -82,8 +82,8 @@ function App() {
 
                         <div className = "text">{todo.text}</div>
 
-                        <div className = "delete-todo" onClick={() => deleteTodo
-                        (todo._id)}>x</div>   
+                        <div className = "delete-todo" onClick={(e) => {e.stopPropagation(); deleteTodo
+                        (todo._id);}}>x</div>   
                     </div>    
                 ))}
 		    </div>
