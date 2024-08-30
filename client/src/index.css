@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url('https://www.riotinto.com/-/media/Content/Images/About/Innovation/AI/artificial-intelligence.jpg?rev=3bfa49f4f00d4b75b442381590ba6f95?w=720&hash=55E441B570A53BC16A031A8CFC80682D');
+    background-image: url('/public/backgroundimage.jpg');
     
     background-repeat: no-repeat;
     background-size: cover;
